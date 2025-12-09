@@ -17,17 +17,10 @@ A solução foi construída com foco em robustez, clareza de código e boas prá
 
 🧠 Abordagem adotada
 
-Embora o desafio permita múltiplas abordagens, foi escolhida uma automação híbrida, combinando:
-
-Automação web (Selenium) para interação com a interface
-
-Processamento de documentos (PDF) para extração estruturada de dados
-
-Regra de negócio aplicada antes da geração e envio do CSV
-
 Essa abordagem reflete práticas comuns em projetos reais de RPA, especialmente quando não há uma API pública disponível para consumo direto.
 
 Este mesmo desafio já foi resolvido anteriormente utilizando ferramentas RPA low-code (ex.: UiPath / Automation Anywhere).
+
 Nesta implementação, a proposta foi reproduzir a mesma lógica de negócio em Python, com controle total do fluxo e maior flexibilidade técnica.
 
 ⚙️ Tecnologias utilizadas
@@ -43,16 +36,6 @@ pdfplumber – leitura e extração de texto de PDFs
 python-dateutil – tratamento de datas
 
 📂 Estrutura do projeto
-desafioRPA/
-│
-├── main.py                # Orquestra o fluxo principal da automação
-├── invoice_parser.py      # Extrai informações relevantes do PDF
-├── csv_writer.py          # Gera o CSV no formato exigido
-├── utils.py               # Funções auxiliares (datas, espera por download)
-│
-├── downloads/             # PDFs baixados automaticamente
-└── output/                # Arquivo CSV gerado
-
 
 A separação em módulos facilita:
 
