@@ -1,0 +1,40 @@
+🔍 Módulo A: Coleta Web & Normalização
+Objetivo: Extrair 5 notícias do Yahoo News, normalizar dados e publicar em uma fila.
+
+Passo a Passo:
+
+Configuração: Criar Assets no Orchestrator para YahooNewsUrl (https://news.yahoo.com) e NewsQueueName.
+
+Abertura do Navegador: Usar Open Browser para acessar a URL.
+
+Extração de Dados:
+
+Usar Data Scraping ou Extract Structured Data para capturar os elementos das notícias na seção "Stories for you".
+
+Mapear os campos: titulo, resumo, tema, fonte, tempo_leitura. O resultado será um DataTable.
+
+Normalização:
+
+Usar um For Each Row no DataTable.
+
+Para cada coluna de texto, aplicar System.Text.RegularExpressions.Regex.Replace([coluna], "[^\w\s.,;:-]", "") para remover caracteres inválidos.
+
+Padronizar: usar .ToLower().Trim() e substituir sinônimos (ex: "tech" → "Tecnologia").
+
+Salvar CSV Local:
+
+Usar Write CSV para gerar news_raw_<yyyy-MM-dd>.csv. Usar DateTime.Now.ToString("yyyy-MM-dd") para a data.
+
+Publicar na Queue:
+
+Para cada linha normalizada no DataTable, usar Add Queue Item na fila configurada (ex: "NewsRawQueue").
+
+O SpecificContent do item será um objeto JSON com os 5 campos. Isso facilita o consumo pelo Módulo B.
+
+Boas Práticas:
+
+Incluir Delay entre ações web para evitar bloqueio.
+
+Usar Take Screenshot em caso de erro no scraping.
+
+Ao final, logar métricas: "News extracted": DataTable.Rows.Count.

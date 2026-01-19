@@ -1,0 +1,6 @@
+{
+  "Name": "robot01",
+  "ProjectType": "Process",
+  "Description": "desafio pratico feito de automação",
+  "MainFile": "Main.xaml"
+}

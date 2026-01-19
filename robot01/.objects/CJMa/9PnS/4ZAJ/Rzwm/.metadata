@@ -1,0 +1,14 @@
+﻿{
+  "Name": "US apologizes for mista…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Rzwm8lRwy0Gw2Z2to1iOXA",
+  "Reference": "LCK9948NkE-x6yHmiim14A/Rzwm8lRwy0Gw2Z2to1iOXA",
+  "ParentRef": "LCK9948NkE-x6yHmiim14A/4ZAJsWiXD0ScRFO4wKMmeg",
+  "Created": "2026-01-16T13:49:58.0993157Z",
+  "Updated": "2026-01-16T13:49:58.0993157Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
