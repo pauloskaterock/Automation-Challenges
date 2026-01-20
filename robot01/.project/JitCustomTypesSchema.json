@@ -48,18 +48,18 @@
       "typedDataTableDto": {
         "id": 3,
         "idRef": "NExtractDataGeneric`1_2",
-        "hash": "NExtractDataGeneric`1_2|DataTable|Y5cGHr5xKLkI9t0DNjcyQNcK2ih5kza9KUyplwCuS4",
+        "hash": "NExtractDataGeneric`1_2|DataTable|WazQ656oM8I7328YY59wfUvui8s662npg9InFBHcj0o",
         "dataType": "System.Data.DataTable, System.Data.Common",
         "columns": [
           {
-            "columnName": "titulo",
+            "columnName": "New column 0",
             "dataType": "System.String, System.Private.CoreLib"
           }
         ]
       },
       "entityAssemblyKey": {
         "name": "Studio.Generated.TypedDataTable3",
-        "hash": "NExtractDataGeneric`1_2|DataTable|yZY5gNTHyK0I6aAjdx16ob0K9fbaayLpkAfH91aUY",
+        "hash": "NExtractDataGeneric`1_2|DataTable|Ghx7B0xVJtichchhVeG4apthku6gjAJEA9PMyNWrA",
         "assemblyName": "Studio.Generated.TypedDataTable3"
       }
     }
