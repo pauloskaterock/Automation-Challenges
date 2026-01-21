@@ -17,7 +17,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-class CoinGeckoExtractor:
+class CoinGeckoExtractor:   # verificar class e metodos errados
     def __init__(self):
         self.api_url = "https://api.coingecko.com/api/v3/coins/markets"
         self.params = {
@@ -37,9 +37,10 @@ class CoinGeckoExtractor:
         return isinstance(exception, (requests.ConnectionError, requests.Timeout))
 
     @retry(stop_max_attempt_number=3,
-           wait_exponential_multiplier=1000,
-           wait_exponential_max=10000,
-           retry_on_exception=self.retry_if_connection_error)
+      wait_exponential_multiplier=1000,
+      wait_exponential_max=10000,
+      # retry_on_exception=self.retry_if_connection_error)
+    )
     def fetch_data(self):
         """Busca dados da API com retry"""
         start_time = time.time()
@@ -110,7 +111,7 @@ class CoinGeckoExtractor:
 
         df = pd.DataFrame(coins)
 
-        # Manter apenas colunas principais no CSV
+        #tentar manter apens coluas cvs
         csv_columns = ["id", "symbol", "name", "current_price", "market_cap", "total_volume"]
         df_csv = df[csv_columns].copy()
         df_csv["extraction_timestamp"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -141,15 +142,14 @@ class CoinGeckoExtractor:
 
     def check_idempotence(self):
         """Verifica se já foi processado (simulação)"""
-        # Em produção, verificar na queue do Orchestrator
-        # Aqui simulamos com arquivo local
+        # verificar orquestrator
         check_file = f"processed_{self.execution_id}.check"
 
         if os.path.exists(check_file):
             logger.warning(f"Execution {self.execution_id} already processed")
             return True
 
-        # Marcar como processado
+        # processado
         with open(check_file, 'w') as f:
             f.write(datetime.now().isoformat())
 
@@ -160,7 +160,7 @@ class CoinGeckoExtractor:
 
         logger.info(f"Starting execution {self.execution_id}")
 
-        # 1. Verificar idempotência
+        # 1. idempotência
         if self.check_idempotence():
             return {
                 "success": False,
@@ -180,12 +180,12 @@ class CoinGeckoExtractor:
         logger.info(f"API response time: {api_result['response_time']}s")
         coins = self.process_coins(api_result["data"])
 
-        # 4. Salvar em CSV
+        # 4. Salvar e um csv
         csv_file = self.save_to_csv(coins)
         if csv_file:
             logger.info(f"Data saved to CSV: {csv_file}")
 
-        # 5. Salvar em JSON (simulação de queue)
+
         json_file = self.save_to_json(coins)
         if json_file:
             logger.info(f"Data saved to JSON: {json_file}")

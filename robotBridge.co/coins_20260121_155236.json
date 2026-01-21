@@ -1,0 +1,57 @@
+{
+  "execution_id": "2026012115",
+  "extraction_time": "2026-01-21 15:52:36",
+  "records_count": 5,
+  "coins": [
+    {
+      "id": "bitcoin",
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "current_price": 88460,
+      "market_cap": 1766959667400,
+      "total_volume": 63329318583,
+      "execution_id": "2026012115",
+      "extraction_time": "2026-01-21 15:52:36"
+    },
+    {
+      "id": "ethereum",
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "current_price": 2924.28,
+      "market_cap": 352334876493,
+      "total_volume": 34594729577,
+      "execution_id": "2026012115",
+      "extraction_time": "2026-01-21 15:52:36"
+    },
+    {
+      "id": "tether",
+      "symbol": "USDT",
+      "name": "Tether",
+      "current_price": 0.999195,
+      "market_cap": 186864662918,
+      "total_volume": 102559647227,
+      "execution_id": "2026012115",
+      "extraction_time": "2026-01-21 15:52:36"
+    },
+    {
+      "id": "binancecoin",
+      "symbol": "BNB",
+      "name": "BNB",
+      "current_price": 873.46,
+      "market_cap": 119036144234,
+      "total_volume": 3211092271,
+      "execution_id": "2026012115",
+      "extraction_time": "2026-01-21 15:52:36"
+    },
+    {
+      "id": "ripple",
+      "symbol": "XRP",
+      "name": "XRP",
+      "current_price": 1.9,
+      "market_cap": 115579432711,
+      "total_volume": 3986231298,
+      "execution_id": "2026012115",
+      "extraction_time": "2026-01-21 15:52:36"
+    }
+  ]
+}
