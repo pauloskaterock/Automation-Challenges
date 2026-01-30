@@ -24,6 +24,10 @@ O tema escolhido foi **dados climáticos**, por ser um domínio simples, claro e
 
 ---
 
+## Instalação
+
+- pip install -r requirements.txt
+
 ##  Estrutura do Projeto
 
 btimeBot/
