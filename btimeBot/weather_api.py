@@ -1,9 +1,11 @@
-import requests
-import csv
+import requests # bibioteca utilizada para requisicoes
+import csv      # biblioteca utilizada para csv
 
-API_URL = "https://api.open-meteo.com/v1/forecast"
-CSV_FILE = "weather_api.csv"
+API_URL = "https://api.open-meteo.com/v1/forecast" # url a ser acessada
+CSV_FILE = "weather_api.csv"  # salva as informaç~es em um csv
 
+
+# funcao para obter dados
 def get_weather():
     params = {
         "latitude": -23.55,
@@ -23,6 +25,8 @@ def get_weather():
         "source": "api"
     }
 
+
+# funcao para salvar arquivo
 def save_to_csv(data):
     with open(CSV_FILE, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(

@@ -1,9 +1,12 @@
-import requests
-import csv
+import requests     # Importa a biblioteca 'requests' para fazer requisições HTTP
+import csv          # Importa a biblioteca 'csv' para trabalhar com arquivos CSV
 
-URL = "https://wttr.in/Sao+Paulo?format=j1"
-CSV_FILE = "weather_scraping.csv"
+URL = "https://wttr.in/Sao+Paulo?format=j1" # acessando url
+CSV_FILE = "weather_scraping.csv" # salva as informaç~es em um csv
 
+
+
+# funcao para obter os dados
 def get_weather():
     response = requests.get(URL, timeout=10)
     response.raise_for_status()
@@ -20,6 +23,7 @@ def get_weather():
         "source": "scraping"
     }
 
+# funcao para slavar os dados
 def save_to_csv(data):
     with open(CSV_FILE, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(
