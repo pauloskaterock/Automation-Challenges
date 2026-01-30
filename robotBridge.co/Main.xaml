@@ -117,7 +117,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="978.8000000000001,2796.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="978.8000000000001,2841.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd3:DataTable" Name="dtNews" />
       <Variable x:TypeArguments="x:String" Default="Chrome" Name="strBrowserType" />
@@ -129,15 +129,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="624,2773.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="624,2818.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="622.4,2098.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="622.4,2143.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Modulo A — Coleta Web-Normalizacao" sap:VirtualizedContainerService.HintSize="588.8,2034.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Modulo A — Coleta Web-Normalizacao" sap:VirtualizedContainerService.HintSize="588.8,2079.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd3:DataRow" Name="currentRow" />
               <Variable x:TypeArguments="x:String" Default="NewsQueue" Name="strQueueName" />
@@ -148,13 +148,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Navega ate yahoo news" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="555.2,1943.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="f7a40767-6181-430a-bc2d-7fb156706412" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Navega ate yahoo news" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="555.2,1988" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="f7a40767-6181-430a-bc2d-7fb156706412" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1745.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1790.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd3:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
                     </Sequence.Variables>
@@ -164,7 +164,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="520,126.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                    <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable3" ContinueOnError="True" DisplayName="Extract News" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='u' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,146.4" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_3" InputDataTable="[dtNews]" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f7a40767-6181-430a-bc2d-7fb156706412" Version="V5">
+                    <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable3" sap2010:Annotation.AnnotationText="Arrumar extracao newsYahoo&#xD;&#xA;" ContinueOnError="True" DisplayName="Extract News" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='u' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,191.2" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_3" InputDataTable="[dtNews]" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f7a40767-6181-430a-bc2d-7fb156706412" Version="V5">
                       <uix:NExtractDataGeneric.NextLink>
                         <uix:TargetAnchorable BrowserURL="news.yahoo.com" DesignTimeRectangle="170, 417, 1165, 178" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' parentid='module-stream' tag='U' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='module-stream' tag='U' class='StretchedBox' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="bfd1f76b-cd33-4c1a-8fab-ac30a712ac05" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Yahoo News: Latest and Breaking News, Headlines, Live Updates, and More' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.PointOffset>
@@ -175,6 +175,11 @@
                       <uix:NExtractDataGeneric.Target>
                         <uix:TargetAnchorable BrowserURL="https://news.yahoo.com/" DesignTimeRectangle="529, 389, 743, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='US citizen says ICE removed him from his Minnesota home in his underwear after warrantless search' parentid='module-stream' tag='A' /&gt;" Guid="78412912-0412-48f2-81b0-1e380091d4fa" InformativeScreenshot="acb100453f28eb165afdd1232c49010d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Yahoo News: Latest and Breaking News, Headlines, Live Updates, and More' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NExtractDataGeneric.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NExtractDataGeneric>
                     <ui:CommentOut DisplayName="Message Box Teste" sap:VirtualizedContainerService.HintSize="520,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                       <ui:CommentOut.Body>

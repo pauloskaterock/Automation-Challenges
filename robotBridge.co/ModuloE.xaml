@@ -103,16 +103,8 @@
       <Variable x:TypeArguments="x:String" Name="apiResponse" />
       <Variable x:TypeArguments="x:Double" Name="responseTime" />
       <Variable x:TypeArguments="x:String" Name="executionId" />
-      <Variable x:TypeArguments="x:String" Name="coinsQueueName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">CoinsQueue</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="apiURL">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&amp;order=market_cap_desc&amp;per_page=5&amp;page=1</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="CoinsQueue" Name="coinsQueueName" />
+      <Variable x:TypeArguments="x:String" Default="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&amp;order=market_cap_desc&amp;per_page=5&amp;page=1" Name="apiURL" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -129,7 +121,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="&quot;CoinGeckoApiUrl&quot;" CacheStrategy="None" DisplayName="Get Asset Coin Gecko" sap:VirtualizedContainerService.HintSize="518.4,180" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="BR001_ExceptionsScreenshotsFolder" CacheStrategy="None" DisplayName="Get Asset Coin Gecko" sap:VirtualizedContainerService.HintSize="518.4,180" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
         <ui:GetRobotAsset.Value>
           <OutArgument x:TypeArguments="x:String">[apiURL]</OutArgument>
         </ui:GetRobotAsset.Value>
