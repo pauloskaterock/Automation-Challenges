@@ -7,6 +7,7 @@ sequência de 3 bilhões de letras entre as possibilidades A (de adenina), T (de
 possibilidades. Num disquete comum cabem cerca de seis milhões dessas letras. Qual é
 aproximadamente o número mínimo de disquetes necessários para guardar o mapa
 completo do genoma humano?
+
 a. 500
 b. 10
 c. 100

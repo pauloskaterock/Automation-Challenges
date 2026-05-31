@@ -37,11 +37,9 @@
 
 
 def processar_notas_simples(notas):
-    """
-    Versão mofificada
-    """
 
-    # Separa as notas por tipo
+
+    # -----Separa as notas por tipo
     emails_para_enviar = []   # notas > 5000
     banco_para_inserir = []   # notas < 5000
     contador_zeradas = 0
@@ -54,7 +52,7 @@ def processar_notas_simples(notas):
         else:
             emails_para_enviar.append(nota)
 
-    # === PASSO 1: ENVIA TODOS OS EMAILS ===
+    # ------------ PASSO 1: ENVIA TODOS OS EMAILS ---------------------
 
     # Email de total de notas
     print(f"Email: Total de notas = {len(notas)}")

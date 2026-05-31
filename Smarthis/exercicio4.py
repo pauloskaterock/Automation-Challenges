@@ -17,7 +17,7 @@
 
 
 def saque(valor):
-    # notas disponíveis
+    # -----notas disponíveis
     notas = [50, 20, 5]
     resultado = {}
 
@@ -28,7 +28,7 @@ def saque(valor):
             valor -= qtd * nota
 
     if valor != 0:
-        return "Valor não pode ser sacado com as notas disponíveis."
+        return " ----------- O valor nao pode ser sacado -----------------"
     else:
         return resultado
 

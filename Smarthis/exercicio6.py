@@ -11,9 +11,9 @@ import random
 def mega_sena():
     """
     Realiza um sorteio da Mega-Sena.
-    Retorna uma lista com 6 números aleatórios entre 1 e 60, sem repetição.
+    Retorna uma lista com 6 números aleatórios entre 1 e 60
     """
-    # Sorteia 6 números únicos entre 1 e 60
+    # ------------Sorteia 6 números únicos entre 1 e 60
     numeros_sorteados = random.sample(range(1, 61), 6)
 
     # Ordena para ficar mais fácil de ler
@@ -23,7 +23,7 @@ def mega_sena():
 
 
 # Teste
-print("=== SORTEIO DA MEGA-SENA ===\n")
+print("---------- SORTEIO DA MEGA-SENA GOOD lUCK-----------\n")
 
 for i in range(5):
     resultado = mega_sena()

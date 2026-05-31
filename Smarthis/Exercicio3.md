@@ -6,6 +6,8 @@ dos lados é mais leve, mais pesado, ou possui o mesmo peso do outro. Usando ape
 duas medidas na balança (ou seja, apenas podendo usá-la duas vezes), como podemos
 encontrar a pedra mais pesada?
 
+Resposta:
+
 Divida as 9 pedras em 3 grupos de 3
 
 1ª pesagem: pese dois grupos
