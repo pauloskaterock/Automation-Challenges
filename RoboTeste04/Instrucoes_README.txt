@@ -15,15 +15,15 @@ Este repositório contém as resoluções dos desafios propostos no processo sel
 
 ## Smathis
 
-├── questao1.py # Genoma humano (disquetes)
-├── questao2.py # Torre de Hanói
-├── questao3.py # Pedra mais pesada (lógica)
-├── questao4.py # Caixa eletrônico (notas 5,20,50)
-├── questao5.py # Numerar caixas com adesivos
-├── questao6.py # Sorteio Mega-Sena
-├── questao7.py # Jogo de adivinhação
-├── questao8.py # Correção do código do Daniel
-├── questao9.py # RPA - Processamento de notas fiscais
+├── questao1.py 
+├── questao2.py 
+├── questao3.py 
+├── questao4.py 
+├── questao5.py 
+├── questao6.py
+├── questao7.py
+├── questao8.py
+├── questao9.py
 |-- README.md
 └── smarther_coding_pt_br_4_1_1
 
